@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+  mostraMessaggio: boolean = true;
+  toggleMessaggio() {
+    this.mostraMessaggio = !this.mostraMessaggio;
+  }
   title = 'esercitazione13_14';
   nome= "app";
   CONTANTI = [
@@ -16,6 +20,7 @@ export class AppComponent {
     {id: 5, name:'euro'},
     {id: 3, name:'lira egiziana'},
     {id: 4, name:'soldi puliti'}
+
 
 
   ];

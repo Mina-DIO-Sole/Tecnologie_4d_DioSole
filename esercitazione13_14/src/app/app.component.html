@@ -15,3 +15,10 @@
     <td>{{cantante.name}}</td>
     <td>{{i}}</td>
   </tr>
+
+  <div>
+  <p *ngIf="mostraMessaggio">Questo messaggio viene mostrato perché mostraMessaggio è true.</p>
+  <p *ngIf="!mostraMessaggio">Questo messaggio viene mostrato perché mostraMessaggio è false.</p>
+
+  <button (click)="toggleMessaggio()">Cambia stato mostraMessaggio</button>
+</div>
