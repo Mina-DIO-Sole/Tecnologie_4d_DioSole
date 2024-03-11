@@ -1,0 +1,33 @@
+{
+    "profiles": [
+      {
+        "firstname": "barbiemina",
+        "lastname": "Dio sole",
+        "bio": "e un genio nnato",        
+        "tagline": "nullafacente",
+        "twitter": "non ha twitter il bro non vive sui social",
+        "imgSrc": "public/images/barbiemina.png",
+        "id": "M"
+      },
+   
+      {
+        "firstname": "chirolitos",
+        "lastname": "Baskettaro",
+        "bio": "e un buon giocatore di niente",
+        "tagline": "nba player",
+        "twitter": "no twitter only.. (ehhh volevi) only instagram",
+        "imgSrc": "public/images/chiroli.png",
+        "id": "C"
+      },
+   
+      {
+        "firstname": "mina",
+        "lastname": "riccardo",
+        "bio": "due falliti che insegnao come divengtare ricchi prendendo in giro i bambini",
+        "tagline": "i Mega rapper",
+        "twitter": "...",
+        "imgSrc": "public/images/noi.png",
+        "id": "N"
+      }
+    ]
+   }
