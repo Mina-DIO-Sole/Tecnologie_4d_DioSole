@@ -1,0 +1,25 @@
+{
+	"songs": [
+	{
+		"song_id" : "0",
+		"title": "La migliore di Milano",
+		"author": "auouoriii sole",
+		"lyrics": "ma io ho te nelle mie orecchieeee",
+		"thumbnail": "Minasole.png"
+	},
+	{
+		"song_id" : "1",
+		"title": "so che non sai",
+		"author": "Il sole magnifico",
+		"lyrics": "se le cose vanno male, io con te ho un accordo",
+		"thumbnail": "DIoSOLEE.png"
+	},
+	{
+		"song_id" : "2",
+		"title": "bho vedi tu",
+		"author": "Solimain",
+		"lyrics": "ora che ho successo ma quanti problemi creano, grattacieli si alzano mentre ragazzi crollano",
+		"thumbnail": "bigcitylife.png"
+	}
+	]
+}
