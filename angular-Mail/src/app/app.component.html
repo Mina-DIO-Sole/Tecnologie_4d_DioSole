@@ -1,0 +1,40 @@
+<div class="">
+    <h1><b style ="margin-left: 40%;">La posta di Dio Sole</b></h1>
+  </div>
+  <div class="">
+    <h3 style ="margin-left: 38%;">Scrivi mail dirette al Dio Supremo</h3>
+    <form (submit)="salvaEmail()" class="was-validated" >
+        <div class="mb-3">
+            <label for="destinatario" class="" style ="margin-left: 50%;">Destinatario:</label>
+            <input type="text" class="form-control" id="pwd" name="destinatario" required [(ngModel)]="destinatario">
+            
+            <div class="invalid-feedback">Mail del destinatatrio.</div>
+        </div>
+        <p>  </p>
+        <div class="">
+            <label for="Oggetto" class="" style ="margin-left: 50%;">Oggetto:</label>
+            <input type="Testo" class="form-control" id="oggetto"  name="oggetto" required [(ngModel)]="oggetto">
+            
+            <div class="invalid-feedback">Inserisci qualcosa.</div>
+        </div>
+        <p>  </p>
+        <div class="">
+            <label for="message" class="" style ="margin-left: 50%;">Testo:</label>
+            <textarea class="form-control" id="message"  name="testo"  required [(ngModel)]="testo"></textarea>
+            
+            <div class="invalid-feedback">inserire il testo.</div>
+        </div>
+        
+       
+        <p>  </p>
+        <div class="">
+            <label for="uname" class="" style ="margin-left: 50%;">La tua mail:</label>
+            <input type="text" class="form-control" id="uname"  name="mittente" required [(ngModel)]="mittente" > 
+            
+            <div class="invalid-feedback">Qui devi inserire la tua mail, senno non va bieneee</div>
+        </div>
+        <p>  </p>
+        <button type="manda" class="" style ="margin-left: 50%;">Andiamo?, si andiamo   </button>
+    </form>
+  </div>
+  <app-sent-mail [emails]="emails"></app-sent-mail>

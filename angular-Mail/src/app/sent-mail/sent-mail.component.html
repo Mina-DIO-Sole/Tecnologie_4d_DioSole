@@ -1,0 +1,24 @@
+<div class="container mt-3">
+    <h3>Qui ce la posta che ti e arrivata</h3>
+    <ul class="list-group">
+        <li *ngFor="let email of emails; let $index = index" class="list-group-item" [style.background-color]="email.evidenziato ? 'red' : 'blue'">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <em> nuova mail da : {{ email.oggetto }} - <span style="color: rgb(255, 0, 0);"></span> - <span style="color: rgb(0, 0, 0);">{{ email.mittente }}</span></em>
+                </div>
+                <div>
+                    <button class="btn btn-info" (click)="toggleEmail($index)" style="color: rgb(72, 0, 255); background-color: rgb(255, 0, 0);">
+                        {{ email.espansa ? 'Chiudi' : 'Espandi' }}
+                    </button>
+                    <button *ngIf="email.espansa" class="btn btn-warning ms-2" (click)="evidenziaSpeciale($index)" style="color: rgb(72, 0, 255); background-color: rgb(255, 0, 0);">Speciale</button>
+                </div>
+            </div>
+            <div *ngIf="email.espansa" class="mt-2">
+                <strong>Da:</strong> {{ email.destinatario }}<br>
+                <strong>Testo:</strong> {{ email.testo }}
+            </div>
+            <p style="font-size: 60%;">(cmq i miei colori preferiti sono il rosso e il blu 😁) </p>
+        </li>
+    </ul>
+  </div>
+  <br>
