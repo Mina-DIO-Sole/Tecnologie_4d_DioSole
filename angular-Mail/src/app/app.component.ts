@@ -20,8 +20,8 @@ export class AppComponent {
       return false;
     }
   
-    const email = { oggetto: this.oggetto, mittente: this.mittente, destinatario: this.destinatario, testo: this.testo };
-    this.emails.push(email);
+    const emails = { oggetto: this.oggetto, mittente: this.mittente, destinatario: this.destinatario, testo: this.testo };
+    this.emails.push(emails);
    
     this.mittente = '';
     this.destinatario = '';

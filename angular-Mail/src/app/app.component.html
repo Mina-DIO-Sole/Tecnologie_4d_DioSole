@@ -4,34 +4,40 @@
   <div class="">
     <h3 style ="margin-left: 38%;">Scrivi mail dirette al Dio Supremo</h3>
     <form (submit)="salvaEmail()" class="was-validated" >
-        <div class="mb-3">
-            <label for="destinatario" class="" style ="margin-left: 50%;">Destinatario:</label>
-            <input type="text" class="form-control" id="pwd" name="destinatario" required [(ngModel)]="destinatario">
+
+        <div class="">
+            <p for="destinatario" class="" style ="margin-left: 50%;">Destinatario:</p>
+            <input type="text" class="" style="width:100%" id="pwd" name="destinatario" required [(ngModel)]="destinatario">
             
-            <div class="invalid-feedback">Mail del destinatatrio.</div>
+
+            <div class="valid-feedback">Ok ora forse ci siamo</div>
+          <div class="invalid-feedback">no baby devi inssire mail di chi manda la MAILS.</div>
+
         </div>
         <p>  </p>
         <div class="">
-            <label for="Oggetto" class="" style ="margin-left: 50%;">Oggetto:</label>
-            <input type="Testo" class="form-control" id="oggetto"  name="oggetto" required [(ngModel)]="oggetto">
+            <p for="Oggetto" class="" style ="margin-left: 50%;">Oggetto:</p>
+            <input type="Testo" class=""  style="width:100%" id="oggetto"  name="oggetto"required [(ngModel)]="oggetto" >
             
-            <div class="invalid-feedback">Inserisci qualcosa.</div>
+            <div class="valid-feedback">ok ora forse si, ho detto forse</div>
+            <div class="invalid-feedback">Inserisci anche due paroline eh.</div>
         </div>
         <p>  </p>
         <div class="">
-            <label for="message" class="" style ="margin-left: 50%;">Testo:</label>
-            <textarea class="form-control" id="message"  name="testo"  required [(ngModel)]="testo"></textarea>
-            
-            <div class="invalid-feedback">inserire il testo.</div>
+            <p for="testo" class="" style ="margin-left: 50%;">Testo:</p>
+            <textarea class="" id="message"  style="width:100%" name="testo" required [(ngModel)]="testo"></textarea>
+            <div class="valid-feedback">ok, dai sta volta te la faccio passare</div>
+            <div class="invalid-feedback">Inserisci anche due paroline eh.</div>
         </div>
         
        
         <p>  </p>
         <div class="">
-            <label for="uname" class="" style ="margin-left: 50%;">La tua mail:</label>
-            <input type="text" class="form-control" id="uname"  name="mittente" required [(ngModel)]="mittente" > 
+            <p for="mittente" class="" style ="margin-left: 50%;">La tua mail:</p>
+            <input type="text" class="" id="uname"  name="mittente"  style="width:100%" required [(ngModel)]="mittente"> 
+            <div class="valid-feedback">si dai, è valida</div>
+          <div class="invalid-feedback">Inserisci la mail del babbo a cui devi inviare la mjials.</div>
             
-            <div class="invalid-feedback">Qui devi inserire la tua mail, senno non va bieneee</div>
         </div>
         <p>  </p>
         <button type="manda" class="" style ="margin-left: 50%;">Andiamo?, si andiamo   </button>

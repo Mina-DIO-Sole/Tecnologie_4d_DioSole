@@ -1,16 +1,19 @@
-<div class="container mt-3">
+<div class="">
     <h3>Qui ce la posta che ti e arrivata</h3>
-    <ul class="list-group">
-        <li *ngFor="let email of emails; let $index = index" class="list-group-item" [style.background-color]="email.evidenziato ? 'red' : 'blue'">
-            <div class="d-flex justify-content-between align-items-center">
+    <ul class="flex-container">
+
+        <li *ngFor="let email of emails; let $index = index" class="list-group-item" [style.background-color]="email.evidenziato ? 'brown' : 'white'">
+
+            <div class="">
                 <div>
-                    <em> nuova mail da : {{ email.oggetto }} - <span style="color: rgb(255, 0, 0);"></span> - <span style="color: rgb(0, 0, 0);">{{ email.mittente }}</span></em>
+                    <em style="margin-left: 50%;"> nuova mail da : {{ email.oggetto }} - <span style="color: rgb(0, 0, 0);"></span> - <span style="color: rgb(255, 255, 255); ">{{ email.mittente }}</span></em>
                 </div>
+                
                 <div>
-                    <button class="btn btn-info" (click)="toggleEmail($index)" style="color: rgb(72, 0, 255); background-color: rgb(255, 0, 0);">
+                    <button class="" (click)="toggleEmail($index)" style="color: rgb(255, 255, 255); margin-left: 50%; ">
                         {{ email.espansa ? 'Chiudi' : 'Espandi' }}
                     </button>
-                    <button *ngIf="email.espansa" class="btn btn-warning ms-2" (click)="evidenziaSpeciale($index)" style="color: rgb(72, 0, 255); background-color: rgb(255, 0, 0);">Speciale</button>
+                    <button    *ngIf="email.espansa" class="" (click)="evidenziaSpeciale($index)" style="color: rgb(10, 10, 10); background-color: rgb(255, 255, 255)">Speciale</button>
                 </div>
             </div>
             <div *ngIf="email.espansa" class="mt-2">
